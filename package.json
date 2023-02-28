@@ -2,7 +2,7 @@
   "name": "dist-up",
   "displayName": "Dist UP!",
   "description": "Get UP and out of dist!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.75.0"
   },
