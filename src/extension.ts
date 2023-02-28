@@ -22,7 +22,7 @@ export function activate(context: vscode.ExtensionContext) {
 		} 
 
 		if (fileName.endsWith('.d.ts')) {
-			fileName = fileName.slice(0 - ('.d.ts'.length)) + '.ts'
+			fileName = fileName.slice(fileName.length - ('.d.ts'.length)) + '.ts'
 		}
 
 		const distUp = fileName.substring(0, lastIndexOfDist) + fileName.substring(lastIndexOfDist+5)
