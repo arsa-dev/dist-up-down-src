@@ -21,6 +21,10 @@ export function activate(context: vscode.ExtensionContext) {
 			return
 		} 
 
+		if (fileName.endsWith('.d.ts')) {
+			fileName = fileName.slice(0 - ('.d.ts'.length)) + '.ts'
+		}
+
 		const distUp = fileName.substring(0, lastIndexOfDist) + fileName.substring(lastIndexOfDist+5)
 		vscode.window.showInformationMessage(`DIST UP! ${distUp}`);
 		vscode.workspace.openTextDocument(vscode.Uri.file(distUp)).then(document => {
