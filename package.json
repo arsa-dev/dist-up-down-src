@@ -1,21 +1,25 @@
 {
-  "name": "dist-up",
-  "displayName": "Dist UP!",
-  "description": "Get UP and out of dist!",
-  "version": "0.0.4",
+  "name": "dist-up-down-src",
+  "displayName": "Dist UP Down SRC!",
+  "description": "Get UP and out of dist. But also down to SRC!",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
   "main": "./out/extension.js",
+  "activationEvents": ["onLanguage:typescript", "onLanguage:javascript"],
   "contributes": {
     "commands": [
       {
-        "command": "distup.distup",
+        "command": "distupdownsrc.distup",
         "title": "Dist UP!"
+      },
+      {
+        "command": "distupdownsrc.distupdownsrc",
+        "title": "Dist UP Down SRC!"
       }
     ]
   },
@@ -42,7 +46,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ryanlaws/dist-up"
+    "url": "https://github.com/arsa-dev/dist-up-down-src"
   },
-  "publisher": "license"
+  "publisher": "ARSADEV"
 }
